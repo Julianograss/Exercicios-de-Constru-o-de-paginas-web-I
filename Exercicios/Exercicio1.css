@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #0000FF;
+    display: grid;
+    grid-gap: 2vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20vh 56vh 26vh;
+    grid-template-areas: 
+        "cabeca cabeca"
+        "aba_lateral corpo"
+        "rodape rodape";
+    background-color: #0000FF;
+}
+
+header {
+    grid-area: cabeca;
+    background-color: #BF9000;
+}
+
+aside {
+    grid-area: aba_lateral;
+    background-color: #888787;
+    color: #FFF;
+}
+
+section {
+    grid-area: corpo;
+    background-color: #38761D;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "esquerda meio direita";
+    grid-template-rows: 6vh 50vh;
+    color: #FFF;
+}
+
+.titulo {
+    grid-area: titulo;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #AAA;
+}
+
+.artigo_esquerdo {
+    grid-area: esquerda;
+    background-color: rgb(80, 41, 255);
+}
+
+.artigo_direito {
+    grid-area: direita;
+    background-color: rgb(16, 138, 138);
+}
+
+.artigo_meio {
+    grid-area: meio;
+    background-color: rgb(177, 210, 30);
+}
+
+#imagem1 {
+    width: 35vh;
+    height: 35vh;
+}
+
+footer {
+    grid-area: rodape;
+    background-color: #ED7D31;
+}

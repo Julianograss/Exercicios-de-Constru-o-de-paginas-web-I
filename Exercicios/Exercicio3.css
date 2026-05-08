@@ -1,0 +1,107 @@
+main {
+    background-color: #c3c4b8;
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-rows: 15vh 63vh 20vh;
+    grid-template-areas: 
+        "cabeca"
+        "corpo aba_lateral"
+        "rodape";
+    background-color: #ffffff;
+}
+
+header {
+    grid-area: cabeca;
+    background-color: #f3f8ff;
+}
+
+header span {
+    width: 40vw;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.infos {
+    width: 59vw;
+    display: inline;
+    display: grid;
+    grid-gap: 5vw;
+    grid-template-columns: 10vh 15vh 15vh 15vh 25vh;
+    grid-template-areas: 
+        "inicio"
+        "sobre"
+        "conteudo"
+        "depoimentos"
+        "inscreva-se";
+    background-color: #413f3f;
+}
+
+.span1 {
+    grid-area: inicio;
+}
+.span2 {
+    grid-area: sobre;
+}
+.span3 {
+    grid-area: conteudo;
+}
+.span4 {
+    grid-area: depoimentos;
+}
+.span5 {
+    grid-area: inscreva-se;
+    margin-right: 20px;
+}
+
+section {
+    grid-area: corpo;
+    background-color: #9b9999;
+    padding: 1px;
+    display: grid;
+    grid-template-rows: 40vh 13vh 17vh 30vh;
+    grid-template-areas: 
+        "titulo"
+        "explicacao"
+        "botao"
+        "beneficios";
+    color: #000;
+}
+
+.titulo {
+    grid-area: titulo;
+    background-color:  #c3c4b8;
+}
+
+.explicacao {
+    grid-area: explicacao;
+}
+
+.botao {
+    grid-area: botao;
+}
+
+.beneficios {
+    grid-area: beneficios;
+}
+
+aside {
+    background-color: rgb(228, 211, 243);
+}
+
+footer {
+    grid-area: corpo;
+    display: grid;
+    padding: 5px 1px 1px 1px;
+    background-color: #c3c4b8;
+    grid-template-rows: 8vh 8vh;
+    grid-template-areas: 
+        "titulo"
+        "explicacao"
+        "botao"
+        "beneficios";
+    color: #000;
+}
+
+.mensagem {
+    background-color: #8a8888;;
+}

@@ -1,107 +1,126 @@
 main {
-    background-color: #c3c4b8;
     display: grid;
-    grid-gap: 1vh;
-    grid-template-rows: 15vh 63vh 20vh;
-    grid-template-areas: 
-        "cabeca"
-        "corpo aba_lateral"
-        "rodape";
+    min-height: 100vh;
+    gap: 1vh;
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 70vh 15vh;
+
+    grid-template-areas:
+        "cabeca cabeca"
+        "corpo lateral"
+        "rodape rodape";
+
     background-color: #ffffff;
 }
+
+/* HEADER */
 
 header {
     grid-area: cabeca;
     background-color: #f3f8ff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
 }
 
-header span {
+.nomeCurso {
     width: 40vw;
-    margin-left: 30px;
-    margin-bottom: 10px;
+    height: 8vh;
+
+    background-color: aqua;
 }
+
+/* MENU */
 
 .infos {
-    width: 59vw;
-    display: inline;
+    width: 38vw;
+    height: 8vh;
+
     display: grid;
-    grid-gap: 5vw;
-    grid-template-columns: 10vh 15vh 15vh 15vh 25vh;
-    grid-template-areas: 
-        "inicio"
-        "sobre"
-        "conteudo"
-        "depoimentos"
-        "inscreva-se";
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas:
+        "inicio sobre conteudo depoimentos inscreva";
+
+    gap: 30px;
+
     background-color: #413f3f;
+    color: white;
+
+    padding: 0 20px;
 }
 
-.span1 {
-    grid-area: inicio;
-}
-.span2 {
-    grid-area: sobre;
-}
-.span3 {
-    grid-area: conteudo;
-}
-.span4 {
-    grid-area: depoimentos;
-}
-.span5 {
-    grid-area: inscreva-se;
-    margin-right: 20px;
-}
+/* ITENS */
+
+.span1 { grid-area: inicio; }
+.span2 { grid-area: sobre; }
+.span3 { grid-area: conteudo; }
+.span4 { grid-area: depoimentos; }
+.span5 { grid-area: inscreva; }
+
+/* SECTION */
 
 section {
     grid-area: corpo;
-    background-color: #9b9999;
-    padding: 1px;
+
     display: grid;
-    grid-template-rows: 40vh 13vh 17vh 30vh;
-    grid-template-areas: 
-        "titulo"
-        "explicacao"
-        "botao"
-        "beneficios";
-    color: #000;
+    gap: 10px;
+
+    background-color: #ffffff;
+
+    padding: 10px;
 }
 
 .titulo {
-    grid-area: titulo;
-    background-color:  #c3c4b8;
+    background-color: #c3c4b8;
+    height: 30vh;
 }
 
 .explicacao {
-    grid-area: explicacao;
+    background-color: #9b9999;
+    height: 6vh;
 }
 
 .botao {
-    grid-area: botao;
+    background-color: #9b9999;
+    height: 8vh;
 }
 
 .beneficios {
-    grid-area: beneficios;
+    background-color: #9b9999;
+    height: 20vh;
 }
 
+/* ASIDE */
+
 aside {
+    grid-area: lateral;
     background-color: rgb(228, 211, 243);
 }
 
+/* FOOTER */
+
 footer {
-    grid-area: corpo;
-    display: grid;
-    padding: 5px 1px 1px 1px;
-    background-color: #c3c4b8;
-    grid-template-rows: 8vh 8vh;
-    grid-template-areas: 
-        "titulo"
-        "explicacao"
-        "botao"
-        "beneficios";
-    color: #000;
+    grid-area: rodape;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #d0d1c4;
 }
 
 .mensagem {
-    background-color: #8a8888;;
+    background-color: #d1cba6;
+}
+
+footer div {
+    background-color: #cfccb4;
 }

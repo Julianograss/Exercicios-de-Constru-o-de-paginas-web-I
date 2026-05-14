@@ -20,14 +20,18 @@ header {
     background-color: #f3f8ff;
     border: 1px solid #413f3f;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "nomeCurso nav";
     align-items: center;
 
+    grid-gap: 5vw;
     padding: 0 10px;
 }
 
 .nomeCurso {
+    grid-area: nomeCurso;
     width: 50vw;
     height: 8vh;
 
@@ -36,6 +40,7 @@ header {
 }
 
 .infos {
+    grid-area: nav;
     width: 38vw;
     height: 8vh;
 

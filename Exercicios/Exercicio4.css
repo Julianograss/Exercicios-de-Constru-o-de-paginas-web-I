@@ -1,0 +1,188 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    gap: 1vh;
+    flex-direction: column;
+
+    background-color: #ffffff;
+}
+
+header {
+    width: 98vw;
+    height: 10vh;
+
+    background-color: #f3f8ff;
+    border: 1px solid #413f3f;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5vw;
+
+    padding: 0px 10px;
+}
+
+.nomeCurso {
+    width: 50vw;
+    height: 8vh;
+
+    background-color: aqua;
+    border: 1px solid #413f3f;
+
+    margin: 20px;
+}
+
+.infos {
+    width: 38vw;
+    height: 8vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    gap: 1%;
+
+    background-color: #ffffff;
+    border: 1px solid #413f3f;
+
+    padding: 0px 0px 0px 10px;
+}
+
+.div1 {
+    height: 8vh;
+    width: 4vw;
+
+    background-color: #413f3f;
+    border: 1px solid #413f3f;
+}
+
+.div2 {
+    height: 8vh;
+    width: 6vw;
+
+    background-color: #413f3f;
+    border: 1px solid #413f3f;
+}
+
+.div3{
+    height: 8vh;
+    width: 10vw;
+
+    background-color: #413f3f;
+    border: 1px solid #413f3f;
+}
+
+main div {
+    width: 98vw;
+    height: 70vh;
+
+    background-color: #f3f8ff;
+    border: 1px solid #413f3f;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+
+    padding: 1%;
+}
+
+section { 
+    width: 70vw;
+    height: 68vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1%; 
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    background-color: #ffffff;
+    border: 1px solid #413f3f;
+
+    padding: 10px;
+}
+
+.titulo {
+    width: 68vw;
+    height: 28vh;
+
+    background-color: #c3c4b8;
+    border: 1px solid #413f3f;
+}
+
+.explicacao {
+    width: 68vw;
+    height: 6vh;
+
+    background-color: #9b9999;
+    border: 1px solid #413f3f;
+}
+
+.botao {
+    width: 68vw;
+    height: 8vh;
+
+    background-color: #9b9999;
+    border: 1px solid #413f3f;
+}
+
+.beneficios {
+    width: 68vw;
+    height: 20vh;
+
+    background-color: #9b9999;
+    border: 1px solid #413f3f;
+}
+
+aside {
+    width: 30vw;
+    height: 68vh;
+    justify-content: flex-end;
+
+    background-color: rgb(228, 211, 243);
+    border: 2px solid #413f3f;
+}
+
+footer {
+    width: 98vw;
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+
+    background-color: #d0d1c4;
+    border: 1px solid #413f3f;
+}
+
+.mensagem {
+    background-color: #d1cba6;
+    border: 1px solid #413f3f;
+
+    width: 90vw;
+    height: 4vh;
+}
+
+footer div {
+    background-color: #cfccb4;
+    border: 1px solid #413f3f;
+
+    width: 90vw;
+    height: 4vh;
+}

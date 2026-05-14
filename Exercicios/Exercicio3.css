@@ -12,24 +12,27 @@ main {
         "rodape rodape";
 
     background-color: #ffffff;
+    border: 1px solid #413f3f;
 }
 
 header {
     grid-area: cabeca;
     background-color: #f3f8ff;
+    border: 1px solid #413f3f;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 40px;
+    padding: 0 10px;
 }
 
 .nomeCurso {
-    width: 40vw;
+    width: 50vw;
     height: 8vh;
 
     background-color: aqua;
+    border: 1px solid #413f3f;
 }
 
 .infos {
@@ -38,26 +41,27 @@ header {
 
     display: grid;
     align-items: center;
-    justify-content: center;
 
-    grid-template-columns: repeat(5, auto);
-    grid-template-areas:
-        "inicio sobre conteudo depoimentos inscreva";
+    grid-template-columns: 10% 18% 18% 18% 28%;
 
-    gap: 30px;
+    gap: 2%;
 
-    background-color: #413f3f;
-    color: white;
+    background-color: #ffffff;
+    border: 1px solid #413f3f;
 
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
-.span1 { grid-area: inicio; }
-.span2 { grid-area: sobre; }
-.span3 { grid-area: conteudo; }
-.span4 { grid-area: depoimentos; }
-.span5 { grid-area: inscreva; }
+.infos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    height: 7vh;
+
+    background-color: #413f3f;
+    border: 1px solid #413f3f;
+}
 section {
     grid-area: corpo;
 
@@ -65,33 +69,39 @@ section {
     gap: 10px;
 
     background-color: #ffffff;
+    border: 1px solid #413f3f;
 
     padding: 10px;
 }
 
 .titulo {
     background-color: #c3c4b8;
+    border: 1px solid #413f3f;
     height: 30vh;
 }
 
 .explicacao {
     background-color: #9b9999;
+    border: 1px solid #413f3f;
     height: 6vh;
 }
 
 .botao {
     background-color: #9b9999;
+    border: 1px solid #413f3f;
     height: 8vh;
 }
 
 .beneficios {
     background-color: #9b9999;
+    border: 1px solid #413f3f;
     height: 20vh;
 }
 
 aside {
     grid-area: lateral;
     background-color: rgb(228, 211, 243);
+    border: 1px solid #413f3f;
 }
 
 footer {
@@ -101,14 +111,24 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 5px;
 
     background-color: #d0d1c4;
+    border: 1px solid #413f3f;
 }
 
 .mensagem {
     background-color: #d1cba6;
+    border: 1px solid #413f3f;
+
+    width: 97vw;
+    height: 5vh;
 }
 
 footer div {
     background-color: #cfccb4;
+    border: 1px solid #413f3f;
+
+    width: 97vw;
+    height: 5vh;
 }

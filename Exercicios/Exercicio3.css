@@ -46,7 +46,6 @@ header {
 
     display: grid;
     align-items: center;
-
     grid-template-columns: 10% 18% 18% 18% 28%;
 
     gap: 2%;
@@ -58,11 +57,10 @@ header {
 }
 
 .infos div {
-    display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 7vh;
+    height: 8vh;
 
     background-color: #413f3f;
     border: 1px solid #413f3f;
@@ -71,7 +69,13 @@ section {
     grid-area: corpo;
 
     display: grid;
-    gap: 10px;
+    grid-gap: 2vh;
+    grid-template-rows: 28vh 6vh 8vh 20vh;
+    grid-template-areas: 
+        "titulo"
+        "explicacao"
+        "botao"
+        "beneficios";
 
     background-color: #ffffff;
     border: 1px solid #413f3f;
@@ -80,27 +84,31 @@ section {
 }
 
 .titulo {
+    grid-area: titulo;
+
     background-color: #c3c4b8;
     border: 1px solid #413f3f;
-    height: 30vh;
 }
 
 .explicacao {
+    grid-area: explicacao;
+
     background-color: #9b9999;
     border: 1px solid #413f3f;
-    height: 6vh;
 }
 
 .botao {
+    grid-area: botao;
+
     background-color: #9b9999;
     border: 1px solid #413f3f;
-    height: 8vh;
 }
 
 .beneficios {
+    grid-area: beneficios;
+
     background-color: #9b9999;
     border: 1px solid #413f3f;
-    height: 20vh;
 }
 
 aside {
@@ -112,28 +120,32 @@ aside {
 footer {
     grid-area: rodape;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 5vh 5vh;
+    grid-template-areas:
+        "mensagem"
+        "outro";
+    grid-template-columns: 1fr 1fr;
 
     background-color: #d0d1c4;
     border: 1px solid #413f3f;
 }
 
 .mensagem {
+    grid-area: mensagem;
+
     background-color: #d1cba6;
     border: 1px solid #413f3f;
 
-    width: 97vw;
-    height: 5vh;
+    width: 90vw;
 }
 
 footer div {
+    grid-area: outro;
+    
     background-color: #cfccb4;
     border: 1px solid #413f3f;
 
-    width: 97vw;
-    height: 5vh;
+    width: 90vw;
 }

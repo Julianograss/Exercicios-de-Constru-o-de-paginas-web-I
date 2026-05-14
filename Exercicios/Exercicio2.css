@@ -5,6 +5,7 @@
 
 main {
     background-color: #002fff79;
+    
     display: grid;
     grid-gap: 5vh;
     grid-template-rows: 15vh 36vh 24vh 10vh;
@@ -13,17 +14,17 @@ main {
         "corpo"
         "principal"
         "rodape";
-    background-color: #ffffff;
 }
 
 header {
     grid-area: cabeca;
+    
     background-color: #0763eca1;
 }
 
 section {
     grid-area: corpo;
-    background-color: #FFF;
+    
     display: grid;
     grid-gap: 4vh;
     grid-template-columns: 1fr 1fr;
@@ -31,11 +32,14 @@ section {
         "lateral artigo1"
         "lateral artigo2";
     grid-template-rows: 16vh 16vh;
+    
+    background-color: #FFF;
     color: #FFF;
 }
 
 .menu_lateral {
     grid-area: lateral;
+    
     background-color: rgb(102, 102, 101);
 }
 
@@ -46,21 +50,25 @@ section {
 
 .artigo_1 {
     grid-area: artigo1;
+    
     background-color: rgb(157, 155, 168);
 }
 
 .artigo_2 {
     grid-area: artigo2;
+    
     background-color: rgb(174, 172, 182);
 }
 
 article {
     grid-area: principal;
+    
     background-color: #000;
     color: #FFF;
 }
 
 footer {
     grid-area: rodape;
+    
     background-color: rgb(200, 122, 235);
 }

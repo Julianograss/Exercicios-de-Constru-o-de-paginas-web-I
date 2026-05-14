@@ -14,8 +14,6 @@ main {
     background-color: #ffffff;
 }
 
-/* HEADER */
-
 header {
     grid-area: cabeca;
     background-color: #f3f8ff;
@@ -33,8 +31,6 @@ header {
 
     background-color: aqua;
 }
-
-/* MENU */
 
 .infos {
     width: 38vw;
@@ -56,15 +52,11 @@ header {
     padding: 0 20px;
 }
 
-/* ITENS */
-
 .span1 { grid-area: inicio; }
 .span2 { grid-area: sobre; }
 .span3 { grid-area: conteudo; }
 .span4 { grid-area: depoimentos; }
 .span5 { grid-area: inscreva; }
-
-/* SECTION */
 
 section {
     grid-area: corpo;
@@ -97,14 +89,10 @@ section {
     height: 20vh;
 }
 
-/* ASIDE */
-
 aside {
     grid-area: lateral;
     background-color: rgb(228, 211, 243);
 }
-
-/* FOOTER */
 
 footer {
     grid-area: rodape;
